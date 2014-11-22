@@ -1,0 +1,96 @@
+<html>
+<head>
+
+<script type='text/javascript' src='http://lrn.icstars.org/redball.js'></script>
+<script>
+
+function up()
+{
+redball.top=redball.top-5;
+}
+function down()
+{
+redball.top=redball.top+5;
+}
+function left()
+{
+
+if  (redball.left >=0 ) {
+redball.left=redball.left-5;
+ }
+ else{ }
+ }
+
+function right()
+{
+redball.left=redball.left+5;
+}
+function square(){
+for(var  i = 1; i<=10; i ++){
+down();
+}
+for(var  i = 1; i<=10; i ++){
+left();
+}
+for(var  i = 1; i<=10; i ++){
+up();
+}
+for(var  i = 1; i<=10; i ++){
+right();
+}
+}
+function downright()
+ {
+ down();
+ right();
+ }
+ function downleft()
+ {
+ down();
+ left();
+ }
+ function upleft()
+ {
+ up();
+ left();
+ }
+function upright()
+{
+up();
+right();
+}
+
+function triangle(){
+for(var  i = 1; i<=10; i ++){
+downright();
+}
+for(var  i = 1; i<=20; i ++){
+left();
+}
+for(var  i = 1; i<=10; i ++){
+upright();}
+}
+function up10(){
+for(var  i = 1; i<=10; i ++){
+up();}
+}
+</script>
+</head>
+<body>
+<img id="redball" src="redball.jpg" alt="redball" style="position: absolute; left: 65px; top: 100px;">
+<button onclick="up()"> up</button>
+<button onclick="down()"> down</button>
+<button onclick="left()"> left</button>
+<button onclick="right()"> right</button>
+<button onclick="square()">square</button>
+<button onclick="circle()">circle</button>
+<button onclick="downright()">downright</button>
+<button onclick=" triangle()">triangle</button>
+<button onclick="upright()">upright</button>
+<button onclick="octagon()">octagon</button>
+<button onclick="up10()">up10</button>
+<button onclick=""></button>
+<button onclick=""></button>
+
+</body>
+</html>

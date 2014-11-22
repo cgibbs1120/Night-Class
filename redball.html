@@ -1,0 +1,138 @@
+<html>
+<head>
+
+<script type='text/javascript' src='http://lrn.icstars.org/redball.js'></script>
+<script>
+
+function up()
+{
+redball.top=redball.top-5;
+}
+function down()
+{
+redball.top=redball.top+5;
+}
+function left()
+{
+redball.left=redball.left-5;
+}
+function right()
+{
+redball.left=redball.left+5;
+}
+function square ()
+{
+left();
+left();
+left();
+left();
+left();
+left();
+left();
+left();
+left();
+left();
+down();
+down();
+down();
+down();
+down();
+down();
+down();
+down();
+down();
+down();
+right();
+right();
+right();
+right();
+right();
+right();
+right();
+right();
+right();
+right();
+up();
+up();
+up();
+up();
+up();
+up();
+up();
+up();
+up();
+up();
+}
+function downright()
+ {
+ down();
+ right();
+ }
+ function downleft()
+ {
+ down();
+ left();
+ }
+ function upleft()
+ {
+ up();
+ left();
+ }
+function upright()
+{
+up();
+right();
+}
+function triangle()
+{
+downright();
+downright();
+downright();
+downright();
+downright();
+downright();
+downright();
+downright();
+downright();
+downright();
+left();
+left();
+left();
+left();
+left();
+left();
+left();
+left();
+left();
+left();
+upright();
+upright();
+upright();
+upright();
+upright();
+upright();
+upright();
+upright();
+upright();
+upright();
+}
+</script>
+</head>
+<body>
+<img id="redball" src="redball.jpg" alt="redball" style="position: absolute; left: 65px; top: 100px;">
+<button onclick="up()"> up</button>
+<button onclick="down()"> down</button>
+<button onclick="left()"> left</button>
+<button onclick="right()"> right</button>
+<button onclick="square()">square</button>
+<button onclick="circle()">circle</button>
+<button onclick="downright()">downright</button>
+<button onclick=" triangle()">triangle</button>
+<button onclick="upright()">upright</button>
+<button onclick="()"></button>
+<button onclick="()"></button>
+<button onclick="()"></button>
+<button onclick="()"></button>
+
+</body>
+</html>
